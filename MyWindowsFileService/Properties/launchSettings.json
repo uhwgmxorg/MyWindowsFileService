@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MyWindowsFileService": {
+      "commandName": "Project",
+      "commandLineArgs": "\\MyWindowsFileService\\Import \\MyWindowsFileService\\Bak"
+    }
+  }
+}
