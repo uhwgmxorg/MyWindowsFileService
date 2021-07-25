@@ -1,0 +1,7 @@
+{
+	"ConfigurationFileName": "\\MyWindowsFileService\\configuration.json",
+	"ImportPath": "\\MyWindowsFileService\\Import",
+	"ExportPath": "\\MyWindowsFileService\\Import\\Done",
+	"ImportFilePattern": "*.csv",
+	"Delay": 5000
+}
