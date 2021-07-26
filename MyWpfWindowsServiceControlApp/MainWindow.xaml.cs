@@ -254,7 +254,9 @@ namespace MyWpfWindowsServiceControlApp
         /// <param name="e"></param>
         private void Button_Settings_SCImportDir_Click(object sender, RoutedEventArgs e)
         {
-            ImportPath =  GetPathFromDialog(Properties.Settings.Default.ServiceConfigurationFileName);
+            Configuration c = new Configuration();
+            c.Load();
+            ImportPath =  GetPathFromDialog(c.ImportPath);
             _configurationIsDirty = true;
         }
 
@@ -265,7 +267,9 @@ namespace MyWpfWindowsServiceControlApp
         /// <param name="e"></param>
         private void Button_Settings_SCExportDir_Click(object sender, RoutedEventArgs e)
         {
-            ExportPath =  GetPathFromDialog(Properties.Settings.Default.ServiceConfigurationFileName);
+            Configuration c = new Configuration();
+            c.Load();
+            ExportPath =  GetPathFromDialog(c.ExportPath);
             _configurationIsDirty = true;
         }
 

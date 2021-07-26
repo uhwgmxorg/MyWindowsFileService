@@ -91,6 +91,7 @@ namespace MyWpfWindowsServiceControlApp
             }
             catch (System.Exception ex)
             {
+                Default();
                 System.Diagnostics.Debug.WriteLine(ex.ToString());
                 return false;
             }
@@ -114,8 +115,8 @@ namespace MyWpfWindowsServiceControlApp
         /// </summary>
         public void Default()
         {
-            ImportPath = "\\MyWindowsFileService\\Import";
-            ExportPath = "\\MyWindowsFileService\\Import\\Done";
+            ImportPath = "C:\\MyWindowsFileService\\Import";
+            ExportPath = "C:\\MyWindowsFileService\\Import\\Done";
             ImportFilePattern = "*.csv";
             Delay = 5000;
             Save();
